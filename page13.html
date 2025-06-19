@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML BASICS</title>
+        <style>
+        body {
+            background-image: url('5591405.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100vh;
+        }
+
+        table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+        }
+        th, td {
+                padding: 5px 15px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="page-navigation" style="margin: 30px 0; text-align: right">
+            <a href="page12.html" class="prev" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; background-color: #80ccdf; color: #333; border: 1px solid #ddd">← Previous</a>
+            <a href="page13.html" class="this" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; background-color: #80df90; color: #333; border: 1px solid #ddd"> 13 </a>
+            <a href="page14.html" class="next" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; background-color: #63adf1; color: #333; border: 1px solid #ddd">Next →</a>
+        </div>
+
+        <pre style="font-size: 30px;">table তৈরি করতে:</pre>
+        <pre style="font-size: 20px;">
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                    
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;table&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;Name&lt;/th&gt;
+                                &lt;th&gt;Roll no&lt;/th&gt;
+                                &lt;th&gt;Reg fee&lt;/th&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Sohel rana&lt;/td&gt;
+                                &lt;td&gt;12&lt;/td&gt;
+                                &lt;td&gt;1000&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Sohag rana&lt;/td&gt;
+                                &lt;td&gt;13&lt;/td&gt;
+                                &lt;td&gt;1000&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Sohil rana&lt;/td&gt;
+                                &lt;td&gt;14&lt;/td&gt;
+                                &lt;td&gt;1000&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        <pre style="color: gray; font-size: 16px;">
+            <strong>Note:</strong> table এর মধ্যে <code>&lt;tr&gt;</code> ট্যাগ দিয়ে row তৈরি করতে হয় এবং <code>&lt;th&gt;</code> ট্যাগ দিয়ে column header তৈরি করতে হয়। <code>&lt;td&gt;</code> ট্যাগ দিয়ে data cell তৈরি করা হয়।
+        </pre>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Roll no</th>
+                <th>Reg fee</th>
+            </tr>
+            <tr>
+                <td>Sohel rana</td>
+                <td>12</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Sohag rana</td>
+                <td>13</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Sohil rana</td>
+                <td>14</td>
+                <td>1000</td>
+            </tr>
+        </table>
+
+        <pre style="font-size: 30px;">table style করতে:</pre>
+        <pre style="font-size: 20px;">
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;style&gt;
+                            table, th, td {
+                                border: 1px solid black;
+                                border-collapse: collapse;
+                            }
+                            th, td {
+                                padding: 5px 15px;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;table&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;Name&lt;/th&gt;
+                                &lt;th&gt;Roll no&lt;/th&gt;
+                                &lt;th&gt;Reg fee&lt;/th&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Sohel rana&lt;/td&gt;
+                                &lt;td&gt;12&lt;/td&gt;
+                                &lt;td&gt;1000&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Sohag rana&lt;/td&gt;
+                                &lt;td&gt;13&lt;/td&gt;
+                                &lt;td&gt;1000&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Sohil rana&lt;/td&gt;
+                                &lt;td&gt;14&lt;/td&gt;
+                                &lt;td&gt;1000&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        <pre style="color: gray; font-size: 16px;">
+            head এর মধ্যে <code>&lt;style&gt;</code> ট্যাগ দিয়ে table, th, td এর style করতে হয়। 
+            <code>border: 1px solid black;</code> দিয়ে table, th, td এর border তৈরি করা হয়। 
+            <code>border-collapse: collapse;</code> দিয়ে table এর border collapse করা হয়, আর্থাৎ border এর মধ্যে gap থাকবে না।
+            <code>padding: 5px 15px;</code> দিয়ে th, td এর padding তৈরি করা হয়। 5px vertical এবং 15px horizontal padding দেওয়া হয়েছে। padding হলো cell এর ভিতরের জায়গা।
+        </pre>
+
+        <pre style="font-size: 30px;">collumn মার্জ করতে:</pre>
+        <pre style="font-size: 20px;">
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;style&gt;
+                            table, th, td {
+                                border: 1px solid black;
+                                border-collapse: collapse;
+                            }
+                            th, td {
+                                padding: 5px 15px;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;table&gt;
+                            &lt;tr&gt;
+                                &lt;th colspan="3"&gt;Student Information&lt;/th&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;Name&lt;/th&gt;
+                                &lt;th&gt;Roll no&lt;/th&gt;
+                                &lt;th&gt;Reg fee&lt;/th&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Sohel rana&lt;/td&gt;
+                                &lt;td&gt;12&lt;/td&gt;
+                                &lt;td&gt;1000&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Sohag rana&lt;/td&gt;
+                                &lt;td&gt;13&lt;/td&gt;
+                                &lt;td&gt;1000&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Sohil rana&lt;/td&gt;
+                                &lt;td&gt;14&lt;/td&gt;
+                                &lt;td&gt;1000&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        <pre style="color: gray; font-size: 16px;">
+            <strong>Note:</strong> <code>&lt;th colspan="3"&gt;</code> দিয়ে column মার্জ করা হয়েছে। এখানে 3 column মার্জ করা হয়েছে। 
+            <code>colspan</code> attribute দিয়ে column মার্জ করা হয়।
+            কোডটির ফলাফল এমন হবে:
+        </pre>
+        <table>
+            <tr>
+                <th colspan="3">Student Information</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Roll no</th>
+                <th>Reg fee</th>
+            </tr>
+            <tr>
+                <td>Sohel rana</td>
+                <td>12</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Sohag rana</td>
+                <td>13</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Sohil rana</td>
+                <td>14</td>
+                <td>1000</td>
+            </tr>
+        </table>
+
+        <pre style="font-size: 30px;">row মার্জ করতে:</pre>
+        <pre style="font-size: 20px;">
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;style&gt;
+                            table, th, td {
+                                border: 1px solid black;
+                                border-collapse: collapse;
+                            }
+                            th, td {
+                                padding: 5px 15px;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;table&gt;
+                            &lt;tr&gt;
+                                &lt;th rowspan="3"&gt;Name&lt;/th&gt;
+                                &lt;th&gt;Roll no&lt;/th&gt;
+                                &lt;th&gt;Reg fee&lt;/th&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;12&lt;/td&gt;
+                                &lt;td&gt;1000&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;13&lt;/td&gt;
+                                &lt;td&gt;1000&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        <pre style="color: gray; font-size: 16px;">
+            <strong>Note:</strong> <code>&lt;th rowspan="3"&gt;</code> দিয়ে row মার্জ করা হয়েছে। এখানে 3 row মার্জ করা হয়েছে। 
+            <code>rowspan</code> attribute দিয়ে row মার্জ করা হয়।
+            কোডটির ফলাফল এমন হবে:
+        </pre>
+        <table>
+            <tr>
+                <th rowspan="3">Name</th>
+                <th>Roll no</th>
+                <th>Reg fee</th>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>1000</td>
+            </tr>
+        </table>
+    </body>
+</html>

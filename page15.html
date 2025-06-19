@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML BASICS</title>
+        <style>
+        body {
+            background-image: url('5591405.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100vh;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="page-navigation" style="margin: 30px 0; text-align: right">
+            <a href="page14.html" class="prev" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; background-color: #80ccdf; color: #333; border: 1px solid #ddd">← Previous</a>
+            <a href="page15.html" class="this" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; background-color: #80df90; color: #333; border: 1px solid #ddd"> 15 </a>
+            <a href="page16.html" class="next" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; background-color: #63adf1; color: #333; border: 1px solid #ddd">Next →</a>
+        </div>
+
+        <pre style="font-size: 30px;">এক ওয়েবসাইটের ভিতরে অন্য ওয়েবসাইট দেখাতে:</pre>
+        <pre style="font-size: 20px;">
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                    
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;iframe src="https://www.freepik.com/" title="fp" style="height: 100px;width:200px;border:3px solid black"&gt; &lt;/iframe&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        <pre style="color: gray; font-size: 16px;">
+            এখানে &lt;iframe&gt; ট্যাগটি ব্যবহার করা হয়েছে যা একটি ওয়েব পেজের ভিতরে অন্য একটি ওয়েব পেজ দেখানোর জন্য ব্যবহৃত হয়।
+            src অ্যাট্রিবিউটটি সেই URL নির্দেশ করে যা আপনি দেখতে চান। 
+            title অ্যাট্রিবিউটটি iframe এর জন্য একটি শিরোনাম প্রদান করে, যা অ্যাক্সেসিবিলিটির জন্য গুরুত্বপূর্ণ। 
+            style অ্যাট্রিবিউটটি iframe এর উচ্চতা, প্রস্থ এবং বর্ডার নির্ধারণ করে।
+            কোডটির ফলাফল এমন হবে: 
+            <iframe src="https://www.freepik.com/" title="fp" style="height: 100px;width:200px;border:3px solid black"> </iframe>
+        </pre>
+
+        <pre style="font-size: 30px;"> Head ট্যাগের বিভিন্ন ট্যাগ:</pre>
+        <pre style="font-size: 20px;">
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;My Web Page&lt;/title&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="keywords" content="HTML, CSS, JS"&gt;
+                        &lt;meta name="description" content="This is ...."&gt;
+                        &lt;meta name="viewport" content="width = device-width; initial-scale = 10"&gt;
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;p&gt;Welcome to my web page!&lt;/p&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        <pre style="color: gray; font-size: 16px;">
+            এখানে &lt;head&gt; ট্যাগের ভিতরে বিভিন্ন ট্যাগ ব্যবহার করা হয়েছে। 
+            &lt;title&gt; ট্যাগটি পৃষ্ঠার শিরোনাম নির্ধারণ করে, যা ব্রাউজারের ট্যাবে প্রদর্শিত হয়। 
+            &lt;meta&gt; ট্যাগগুলি পৃষ্ঠার মেটাডেটা প্রদান করে, যেমন চরিত্র সেট, কীওয়ার্ড, বর্ণনা এবং ভিউপোর্ট সেটিংস। 
+            এই ট্যাগগুলি সার্চ ইঞ্জিন অপটিমাইজেশন (SEO) এবং রেস্পন্সিভ ডিজাইনের জন্য গুরুত্বপূর্ণ।
+            এখানে &lt;meta charset="UTF-8"&gt; ট্যাগটি পৃষ্ঠার চরিত্র সেট নির্ধারণ করে, যা ইউনিকোড (UTF-8) ব্যবহার করে।
+            &lt;meta name="keywords" content="HTML, CSS, JS"&gt; ট্যাগটি পৃষ্ঠার কীওয়ার্ড নির্ধারণ করে যা সার্চ ইঞ্জিনে পৃষ্ঠাটি খুঁজে পেতে সাহায্য করে।
+            &lt;meta name="description" content="This is ...."&gt; ট্যাগটি পৃষ্ঠার বর্ণনা প্রদান করে, যা সার্চ ইঞ্জিনের ফলাফলে প্রদর্শিত হয়।
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; ট্যাগটি পৃষ্ঠার ভিউপোর্ট সেটিংস নির্ধারণ করে, যা মোবাইল ডিভাইসে রেস্পন্সিভ ডিজাইন নিশ্চিত করে।
+            কোডটির ফলাফল এমন হবে:
+            <p>Welcome to my web page!</p>
+        </pre>
+    </body>
+</html>

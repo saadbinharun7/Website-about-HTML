@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML BASICS</title>
+        <style>
+        body {
+            background-image: url('5591405.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100vh;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="page-navigation" style="margin: 30px 0; text-align: right">
+            <a href="page15.html" class="prev" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; background-color: #80ccdf; color: #333; border: 1px solid #ddd">← Previous</a>
+            <a href="page16.html" class="this" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; background-color: #80df90; color: #333; border: 1px solid #ddd"> 16 </a>
+            <a href="page17.html" class="next" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; background-color: #63adf1; color: #333; border: 1px solid #ddd">Next →</a>
+        </div>
+
+        <pre style="font-size: 30px;">To make a form:</pre>
+        <pre style="font-size: 20px;">
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                    
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;form action="submit_form.php" method="post"&gt;
+                            &lt;label for="name"&gt;Name:&lt;/label&gt;
+                            &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
+                            &lt;label for="email"&gt;Email:&lt;/label&gt;
+                            &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+                            &lt;label for="message"&gt;Message:&lt;/label&gt;
+                            &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;&lt;br&gt;
+                            &lt;p&gt;Select your favorite color:&lt;/p&gt;
+                            &lt;input type="radio" id="red" name="color" value="red"&gt;
+                            &lt;label for="red"&gt;Red&lt;/label&gt;&lt;br&gt;
+                            &lt;input type="radio" id="green" name="color" value="green"&gt;
+                            &lt;label for="green"&gt;Green&lt;/label&gt;&lt;br&gt;
+                            &lt;input type="radio" id="blue" name="color" value="blue"&gt;
+                            &lt;label for="blue"&gt;Blue&lt;/label&gt;&lt;br&gt;
+                            &lt;label for="country"&gt;Country:&lt;/label&gt;
+                            &lt;select id="country" name="country"&gt;
+                                &lt;option value="bangladesh"&gt;Bangladesh&lt;/option&gt;
+                                &lt;option value="canada"&gt;Canada&lt;/option&gt;
+                                &lt;option value="uk"&gt;UK&lt;/option&gt;
+                                &lt;option value="australia"&gt;Australia&lt;/option&gt;
+                                &lt;option value="other"&gt;Other&lt;/option&gt;
+                            &lt;/select&gt;&lt;br&gt;
+                            &lt;label for="subscribe"&gt;Subscribe to me:&lt;/label&gt;
+                            &lt;input type="checkbox" id="subscribe" name="subscribe" value="yes"&gt;&lt;br&gt;
+                            &lt;label for="birthdate"&gt;Select your birthdate:&lt;/label&gt;
+                            &lt;input type="date" id="birthdate" name="birthdate"&gt;&lt;br&gt;
+                            &lt;label for="time"&gt;Select this time:&lt;/label&gt;
+                            &lt;input type="time" id="time" name="time"&gt;&lt;br&gt;
+                            &lt;label for="file"&gt;Upload a file:&lt;/label&gt;
+                            &lt;input type="file" id="file" name="file"&gt;&lt;br&gt;
+                            &lt;label for="number"&gt;Enter a number:&lt;/label&gt;
+                            &lt;input type="number" id="number" name="number" min="1" max="100"&gt;&lt;br&gt;
+                            &lt;label for="range"&gt;Select a range:&lt;/label&gt;
+                            &lt;input type="range" id="range" name="range" min="0" max="100"&gt;&lt;br&gt;
+                            &lt;label for="colorPicker"&gt;Choose a color:&lt;/label&gt;
+                            &lt;input type="color" id="colorPicker" name="colorPicker"&gt;&lt;br&gt;
+                            &lt;label for="search"&gt;Search:&lt;/label&gt;
+                            &lt;input type="search" id="search" name="search"&gt;&lt;br&gt;
+                            &lt;label for="url"&gt;Enter a URL:&lt;/label&gt;
+                            &lt;input type="url" id="url" name="url"&gt;&lt;br&gt;
+                            &lt;label for="tel"&gt;Enter a phone number:&lt;/label&gt;
+                            &lt;input type="tel" id="tel" name="tel"&gt;&lt;br&gt;
+                            &lt;label for="password"&gt;Enter a password:&lt;/label&gt;
+                            &lt;input type="password" id="password" name="password"&gt;&lt;br&gt;
+                            &lt;label for="hidden"&gt;Hidden input:&lt;/label&gt;
+                            &lt;input type="hidden" id="hidden" name="hidden" value="hiddenValue"&gt;&lt;br&gt;
+                            &lt;input type="submit" value="Submit"&gt;
+                        &lt;/form&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        <pre style="color: gray; font-size: 16px;">
+            এখানে একটি ফর্ম তৈরি করা হয়েছে যা বিভিন্ন ইনপুট ফিল্ড এবং বাটন ধারণ করে। 
+            action অ্যাট্রিবিউটটি ফর্মটি জমা দেওয়ার সময় কোন URL এ ডেটা পাঠানো হবে তা নির্দেশ করে। 
+            method অ্যাট্রিবিউটটি ডেটা পাঠানোর পদ্ধতি নির্ধারণ করে (এখানে POST ব্যবহার করা হয়েছে)।
+            ফর্মে বিভিন্ন ধরনের ইনপুট ফিল্ড রয়েছে,
+            text (নাম), নাম বা সল্প লিখার জন্য,
+            email (ইমেইল), ইমেইল ঠিকানা ইনপুট করার জন্য,
+            textarea (বার্তা), বড় টেক্সট ইনপুট করার জন্য,
+            radio (রেডিও বাটন), একের অধিক option থেকে যেকোন ১টি নির্বাচন করার জন্য,
+            select (ড্রপডাউন), dropdown menu থেকে নির্বাচন করার জন্য,
+            checkbox (চেকবক্স), এক বা অধিক অপশন থাকলে সেগুলো নির্বাচন করার জন্য (একের অধিক অপশন নির্বাচন করা যায়),
+            date (তারিখ), তারিখ নির্বাচন করার জন্য,
+            time (সময়), সময় নির্বাচন করার জন্য,
+            file (ফাইল আপলোড), ফাইল আপলোড করার জন্য,
+            number (সংখ্যা), একটি সংখ্যা ইনপুট করার জন্য, যেখানে min এবং max মান নির্ধারণ করা হয়েছে,
+            range (রেঞ্জ), একটি রেঞ্জ নির্বাচন করার জন্য, যেখানে min এবং max মান নির্ধারণ করা হয়েছে,
+            color (রঙ), একটি রঙ নির্বাচন করার জন্য,
+            search (সার্চ), সার্চ ইনপুট করার জন্য,
+            url (ইউআরএল), একটি URL ইনপুট করার জন্য,
+            tel (টেলিফোন), ফোন নম্বর ইনপুট করার জন্য,
+            password (পাসওয়ার্ড), পাসওয়ার্ড ইনপুট করার জন্য,
+            hidden (হিডেন ইনপুট), একটি হিডেন ইনপুট ফিল্ড যা ব্যবহারকারীর জন্য দৃশ্যমান নয় কিন্তু ডেটা পাঠানোর সময় অন্তর্ভুক্ত করা হয়।
+            submit (জমা দিন), ফর্মটি জমা দেওয়ার জন্য একটি বাটন।
+            এই ফর্মটি ব্যবহারকারীদের বিভিন্ন তথ্য ইনপুট করার সুযোগ দেয় এবং জমা দেওয়ার সময় নির্দিষ্ট URL এ ডেটা পাঠায়।
+            <br>
+            কোডটির ফলাফল এমন হবে:
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br>
+                Select your favorite color:
+                <input type="radio" id="red" name="color" value="red">
+                <label for="red">Red</label><br>
+                <input type="radio" id="green" name="color" value="green">
+                <label for="green">Green</label><br>
+                <input type="radio" id="blue" name="color" value="blue">
+                <label for="blue">Blue</label><br>
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <label for="subscribe">Subscribe to me:</label>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br>
+                <label for="birthdate">Select your birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate"><br>
+                <label for="time">Select this time:</label>
+                <input type="time" id="time" name="time"><br>
+                <label for="file">Upload a file:</label>
+                <input type="file" id="file" name="file"><br>
+                <label for="number">Enter a number:</label>
+                <input type="number" id="number" name="number" min="1" max="100"><br>
+                <label for="range">Select a range:</label>
+                <input type="range" id="range" name="range" min="0" max="100"><br>
+                <label for="colorPicker">Choose a color:</label>
+                <input type="color" id="colorPicker" name="colorPicker"><br>   
+                <label for="search">Search:</label>
+                <input type="search" id="search" name="search"><br>
+                <label for="url">Enter a URL:</label>
+                <input type="url" id="url" name="url"><br>
+                <label for="tel">Enter a phone number:</label>
+                <input type="tel" id="tel" name="tel"><br>
+                <label for="password">Enter a password:</label>
+                <input type="password" id="password" name="password"><br>
+                <label for="hidden">Hidden input:</label>
+                <input type="hidden" id="hidden" name="hidden" value="hiddenValue"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </pre>
+    </body>
+</html>

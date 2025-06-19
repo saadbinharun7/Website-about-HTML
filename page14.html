@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML BASICS</title>
+        <style>
+        body {
+            background-image: url('5591405.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100vh;
+        }
+        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+        <div class="page-navigation" style="margin: 30px 0; text-align: right">
+            <a href="page13.html" class="prev" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; background-color: #80ccdf; color: #333; border: 1px solid #ddd">← Previous</a>
+            <a href="page14.html" class="this" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; background-color: #80df90; color: #333; border: 1px solid #ddd"> 14 </a>
+            <a href="page15.html" class="next" style="text-decoration: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; background-color: #63adf1; color: #333; border: 1px solid #ddd">Next →</a>
+        </div>
+
+        <pre style="font-size: 30px;">list তৈরি করার জন্য:(ul দিয়ে)</pre>
+        <pre style="font-size: 20px;">
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                    
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;ul style="list-style-type:curcle"&gt;
+                            &lt;li&gt;Item 1&lt;/li&gt;
+                            &lt;li&gt;Item 2&lt;/li&gt;
+                            &lt;li&gt;Item 3&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        <pre style="color: gray; font-size: 16px;">
+            এখানে &lt;ul&gt; ট্যাগটি unordered list তৈরি করে। এই কোডটি একটি তালিকা তৈরি করবে যেখানে প্রতিটি আইটেম একটি বুলেট পয়েন্ট দ্বারা চিহ্নিত হবে। এখানে list-style-type:circle ব্যবহার করা হয়েছে, যা বুলেট পয়েন্টকে একটি বৃত্তাকার চিহ্নে পরিবর্তন করে। list-style-type এর মান হতে পারে disc, square, circle ইত্যাদি।
+            কোডটির ফলাফল এমন হবে: 
+            <ul style="list-style-type:circle">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </pre>
+
+        <pre style="font-size: 30px;">list তৈরি করার জন্য:(ol দিয়ে)</pre>
+        <pre style="font-size: 20px;">
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                    
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;ol type="i"&gt;
+                            &lt;li&gt;Item 1&lt;/li&gt;
+                            &lt;li&gt;Item 2&lt;/li&gt;
+                            &lt;li&gt;Item 3&lt;/li&gt;
+                        &lt;/ol&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        <pre style="color: gray; font-size: 16px;">
+            এখানে &lt;ol&gt; ট্যাগটি ordered list তৈরি করে। এই কোডটি একটি তালিকা তৈরি করবে যেখানে প্রতিটি আইটেম একটি সংখ্যা দ্বারা চিহ্নিত হবে। এখানে type="i" ব্যবহার করা হয়েছে, যা রোমান সংখ্যা (i, ii, iii) ব্যবহার করে তালিকাটি তৈরি করে। type এর মান হতে পারে 1, a, A, i, I ইত্যাদি।
+            কোডটির ফলাফল এমন হবে: 
+            <ol type="i">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </pre>
+
+        <pre style="font-size: 30px;">বিভিন্ন যাগা থেকে list তৈরি করতে:</pre>
+        <pre style="font-size: 20px;">
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                    
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;ol type="A" start="4"&gt;
+                            &lt;li&gt;Item 1&lt;/li&gt;
+                            &lt;li&gt;Item 2&lt;/li&gt;
+                            &lt;li&gt;Item 3&lt;/li&gt;
+                        &lt;/ol&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        <pre style="color: gray; font-size: 16px;">
+            এখানে type="A" ব্যবহার করা হয়েছে, যা বড় হাতের ইংরেজি অক্ষর (A, B, C) ব্যবহার করে তালিকাটি তৈরি করে। start="4" ব্যবহার করা হয়েছে, যা তালিকাটির শুরু সংখ্যা 4 থেকে শুরু করবে। 
+            কোডটির ফলাফল এমন হবে: 
+            <ol type="A" start="4">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </pre>
+
+        <pre style="font-size: 30px;">discription title তৈরি করতে:</pre>
+        <pre style="font-size: 20px;">
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                    
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;dl&gt;
+                            &lt;dt&gt;Title 1&lt;/dt&gt;
+                            &lt;dd&gt;Description 1&lt;/dd&gt;
+                            &lt;dt&gt;Title 2&lt;/dt&gt;
+                            &lt;dd&gt;Description 2&lt;/dd&gt;
+                        &lt;/dl&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        <pre style="color: gray; font-size: 16px;">
+            এখানে &lt;dl&gt; ট্যাগটি description list তৈরি করে। এই কোডটি একটি তালিকা তৈরি করবে যেখানে প্রতিটি আইটেমের জন্য একটি শিরোনাম (title) এবং তার সাথে সম্পর্কিত বর্ণনা (description) থাকবে। 
+            কোডটির ফলাফল এমন হবে: 
+            <dl>
+                <dt>Title 1</dt>
+                <dd>Description 1</dd>
+                <dt>Title 2</dt>
+                <dd>Description 2</dd>
+            </dl>
+        </pre>
+    </body>
+</html>
